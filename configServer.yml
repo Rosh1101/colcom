@@ -1,0 +1,18 @@
+app:
+  version: 1.0.0
+  author: 
+    - Roshan Mishra
+    - Krish Singh
+
+environment:
+  port_env: 5500
+
+route:
+  home: "/"
+  signup: "/signup"
+  login: "/login"
+  issueForm: "/forms"
+  map: "/map"
+  feedback: "/feedback"
+  communities: "/communities"
+  gallery: "/gallery"
