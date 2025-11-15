@@ -1,0 +1,50 @@
+app:
+name: "CampusEngage"
+version: 1.0.0
+authors:
+- Roshan Mishra
+- Krish Singh
+
+
+environment:
+port: 5500
+mode: "development"
+cors_origin: "*"
+jwt_expiry: "7d"
+session_secret: "default_secret_key"
+
+
+database:
+type: "mongodb"
+url: "mongodb://localhost:27017/campus_engage"
+
+
+routes:
+home: "/"
+auth:
+signup: "/signup"
+login: "/login"
+logout: "/logout"
+forms:
+issue_form: "/forms/issue"
+resources:
+map: "/map"
+communities: "/communities"
+gallery: "/gallery"
+feedback:
+submit: "/feedback"
+list: "/feedback/all"
+
+
+uploads:
+max_size: "5mb"
+allowed_types:
+- "image/jpeg"
+- "image/png"
+- "image/webp"
+
+
+logging:
+level: "info"
+save_to_file: true
+log_file_path: "./logs/app.log"
