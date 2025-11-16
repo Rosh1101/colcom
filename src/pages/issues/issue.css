@@ -1,0 +1,199 @@
+.back{
+    font-family: "Inter", sans-serif;
+    background: #000000;
+    margin: 0;
+    padding: 40px 0;
+}
+
+
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 35px 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.issue-form label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.issue-form input,
+.issue-form select,
+.issue-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dde3ea;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    background: #f9fbfd;
+}
+
+.issue-form textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, #3ec7c2, #e1855e);
+    font-weight: 600;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.recent-container {
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+.recent-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.issue-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+}
+
+.issue-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.issue-desc {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.issue-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 4px 10px;
+    background: #e8f5f5;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #3a8b8b;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+}
+
+.status {
+    margin-left: auto;
+    padding: 4px 10px;
+    background: #d9f5fa;
+    border-radius: 12px;
+    color: #44a7b3;
+    font-size: 13px;
+}
+
+
+.recent-container {
+    max-width: 750px;
+    margin: 40px auto;
+}
+
+.recent-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.issue-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+}
+
+.issue-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.issue-desc {
+    color: #555;
+    margin: 6px 0 12px;
+}
+
+.issue-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tag {
+    padding: 4px 10px;
+    background: #e8f5f5;
+    border-radius: 12px;
+    font-size: 13px;
+    color: #3a8b8b;
+}
+
+.location {
+    font-size: 14px;
+    color: #444;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+}
+
+.status {
+    margin-left: auto;
+    padding: 4px 10px;
+    background: #d9f5fa;
+    border-radius: 12px;
+    color: #44a7b3;
+    font-size: 13px;
+}

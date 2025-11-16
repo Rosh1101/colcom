@@ -1,0 +1,79 @@
+.back{
+    font-family: "Inter", sans-serif;
+    background: #000000;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.topbar {
+    text-align: center;
+    padding: 40px 20px 10px;
+}
+
+.topbar h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #83d2ce, #d3b898);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.topbar p {
+    margin-top: -5px;
+    color: #bfbfbf;
+}
+
+.gallery-container {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+}
+
+.gallery-card {
+    background: #111;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #222;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 18px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.description {
+    color: #b4b4b4;
+    font-size: 0.95rem;
+}
+
+.meta {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    background: #222;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.likes {
+    font-size: 0.9rem;
+    color: #bbb;
+}

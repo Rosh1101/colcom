@@ -1,0 +1,85 @@
+.back{
+    font-family: "Inter", sans-serif;
+    background: #000000;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: -10px;
+    color: #bbbbbb;
+}
+
+.map-container {
+    width: 85%;
+    margin: 40px auto;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.12));
+    padding: 80px 20px;
+    border-radius: 20px;
+}
+
+.map-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.locations-title {
+    text-align: left;
+    width: 85%;
+    margin: 20px auto;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.cards-grid {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111111;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: left;
+    border: 1px solid #222;
+}
+
+.icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.blue { color: #4da3ff; }
+.green { color: #34d399; }
+.yellow { color: #facc15; }
+.purple { color: #c084fc; }
+.red { color: #f87171; }
+.pink { color: #fb7185; }
+
+.tag {
+    background: #333;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color: #ddd;
+}
+
+.view-map {
+    display: block;
+    margin-top: 10px;
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+.view-map:hover {
+    text-decoration: underline;
+}

@@ -12,10 +12,10 @@ return (
             </div>
             <nav>
                 <Link to="/">Home</Link>
-                <Link to="/">Report Issue</Link>
-                <Link to="/">Campus Map</Link>
-                <Link to="/">Communities</Link>
-                <Link to="/">Gallery</Link>
+                <Link to="/issues">Report Issue</Link>
+                <Link to="/map">Campus Map</Link>
+                <Link to="/communities">Communities</Link>
+                <Link to="/gallary">Gallery</Link>
                 <Link to="/">Feedback</Link>
             </nav>
         </div>
