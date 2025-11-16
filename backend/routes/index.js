@@ -1,18 +1,47 @@
 const express = require('express');
-const router = express.Router();
-const config = require('js-yaml').load(require('fs').readFileSync('./config.yaml', 'utf8'));
+const cors = require('cors');
+const fs = require('fs');
+const yaml = require('js-yaml');
+const mongoose = require('mongoose');
 
+// Load config from YAML
+let config = {};
+try {
+  const fileContents = fs.readFileSync('../config.yaml', 'utf8');
+  config = yaml.load(fileContents);
+  console.log('Config loaded:', config);
+} catch (e) {
+  console.error('Failed to load config.yaml', e);
+  process.exit(1);
+}
 
-// split routes
-router.get(config.routes.home, (req, res) => res.json({ message: 'CampusEngage API - Home' }));
+const app = express();
 
+// Connect to MongoDB
+mongoose.connect(config.mongo_uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+}).then(() => {
+  console.log('MongoDB connected');
+}).catch((err) => {
+  console.error('MongoDB connection error:', err);
+  process.exit(1);
+});
 
-const authRoutes = require('./auth');
-const resourceRoutes = require('./resources');
+const registerRoutes = require('./register');
+const loginRoutes = require('./login');
 
+app.use(cors());
+app.use(express.json());
 
-router.use('/auth', authRoutes);
-router.use('/resources', resourceRoutes);
+// Routes
+app.use('/api/auth/signup', registerRoutes);
+app.use('/api/auth/login', loginRoutes);
 
+// Health check
+app.get('/api', (req, res) => res.json({ message: "ColCom backend running" }));
 
-module.exports = router;
+const PORT = config.port || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
