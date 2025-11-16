@@ -2,7 +2,19 @@
   "name": "campusengage-frontend",
   "version": "1.0.0",
   "private": true,
+  "description": "",
+  "homepage": "https://github.com/Rosh1101/colcom#readme",
+  "bugs": {
+    "url": "https://github.com/Rosh1101/colcom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosh1101/colcom.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
